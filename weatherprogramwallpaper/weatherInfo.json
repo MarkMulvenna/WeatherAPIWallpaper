@@ -1,0 +1,43 @@
+{
+  "coord": {
+    "lon": -5.9594,
+    "lat": 54.6718
+  },
+  "weather": [
+    {
+      "id": 804,
+      "main": "Clouds",
+      "description": "overcast clouds",
+      "icon": "04n"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 279.33,
+    "feels_like": 276.69,
+    "temp_min": 277.79,
+    "temp_max": 279.39,
+    "pressure": 1022,
+    "humidity": 90
+  },
+  "visibility": 10000,
+  "wind": {
+    "speed": 3.6,
+    "deg": 80
+  },
+  "clouds": {
+    "all": 92
+  },
+  "dt": 1650947054,
+  "sys": {
+    "type": 1,
+    "id": 1376,
+    "country": "GB",
+    "sunrise": 1650948958,
+    "sunset": 1651002422
+  },
+  "timezone": 3600,
+  "id": 2655984,
+  "name": "Glengormley",
+  "cod": 200
+}

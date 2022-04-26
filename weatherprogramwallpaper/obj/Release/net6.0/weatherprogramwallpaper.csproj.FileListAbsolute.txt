@@ -1,0 +1,17 @@
+C:\Users\mmulv\source\repos\weatherprogramwallpaper\weatherprogramwallpaper\bin\Release\net6.0\weatherprogramwallpaper.exe
+C:\Users\mmulv\source\repos\weatherprogramwallpaper\weatherprogramwallpaper\bin\Release\net6.0\weatherprogramwallpaper.deps.json
+C:\Users\mmulv\source\repos\weatherprogramwallpaper\weatherprogramwallpaper\bin\Release\net6.0\weatherprogramwallpaper.runtimeconfig.json
+C:\Users\mmulv\source\repos\weatherprogramwallpaper\weatherprogramwallpaper\bin\Release\net6.0\weatherprogramwallpaper.dll
+C:\Users\mmulv\source\repos\weatherprogramwallpaper\weatherprogramwallpaper\bin\Release\net6.0\weatherprogramwallpaper.pdb
+C:\Users\mmulv\source\repos\weatherprogramwallpaper\weatherprogramwallpaper\bin\Release\net6.0\Newtonsoft.Json.dll
+C:\Users\mmulv\source\repos\weatherprogramwallpaper\weatherprogramwallpaper\obj\Release\net6.0\weatherprogramwallpaper.csproj.AssemblyReference.cache
+C:\Users\mmulv\source\repos\weatherprogramwallpaper\weatherprogramwallpaper\obj\Release\net6.0\weatherprogramwallpaper.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mmulv\source\repos\weatherprogramwallpaper\weatherprogramwallpaper\obj\Release\net6.0\weatherprogramwallpaper.AssemblyInfoInputs.cache
+C:\Users\mmulv\source\repos\weatherprogramwallpaper\weatherprogramwallpaper\obj\Release\net6.0\weatherprogramwallpaper.AssemblyInfo.cs
+C:\Users\mmulv\source\repos\weatherprogramwallpaper\weatherprogramwallpaper\obj\Release\net6.0\weatherprogramwallpaper.csproj.CoreCompileInputs.cache
+C:\Users\mmulv\source\repos\weatherprogramwallpaper\weatherprogramwallpaper\obj\Release\net6.0\weatherprogramwallpaper.csproj.CopyComplete
+C:\Users\mmulv\source\repos\weatherprogramwallpaper\weatherprogramwallpaper\obj\Release\net6.0\weatherprogramwallpaper.dll
+C:\Users\mmulv\source\repos\weatherprogramwallpaper\weatherprogramwallpaper\obj\Release\net6.0\refint\weatherprogramwallpaper.dll
+C:\Users\mmulv\source\repos\weatherprogramwallpaper\weatherprogramwallpaper\obj\Release\net6.0\weatherprogramwallpaper.pdb
+C:\Users\mmulv\source\repos\weatherprogramwallpaper\weatherprogramwallpaper\obj\Release\net6.0\weatherprogramwallpaper.genruntimeconfig.cache
+C:\Users\mmulv\source\repos\weatherprogramwallpaper\weatherprogramwallpaper\obj\Release\net6.0\ref\weatherprogramwallpaper.dll
