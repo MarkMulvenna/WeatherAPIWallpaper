@@ -114,12 +114,19 @@ public class ChangeWallpaper
    
     private static bool IsSunset(DateTime sunrise, DateTime sunset)
     {
-        int result = DateTime.Compare(DateTime.Now, sunrise);
-        if (result > 0)
+        DateTime today5am = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 5, 0, 0);
+        
+        int resultOfCompare = DateTime.Compare(DateTime.Now, sunrise );
+
+
+        if (DateTime.Compare(DateTime.Now, today5am) < 0 ) return true;
+        
+        if (resultOfCompare > 0)
         {
-            return true;
-           
+            return false;
         }
+
+
         return false;
 
     }
@@ -168,6 +175,7 @@ public class ChangeWallpaper
        ProcessStartInfo processInfo = new ProcessStartInfo("cmd.exe", "/c " + batFileName);   
        processInfo.CreateNoWindow = true;
        processInfo.UseShellExecute = false;
+       processInfo.WindowStyle = ProcessWindowStyle.Hidden;
        Process process = Process.Start(processInfo);
        process.WaitForExit();
        process.Close();
