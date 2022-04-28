@@ -45,7 +45,7 @@ public class GetWeatherFromOpenWeatherMap
             response.EnsureSuccessStatusCode();
             string responseBody = await response.Content.ReadAsStringAsync();
             JsonSerializer serializer = new JsonSerializer();
-            Console.WriteLine("Response " + responseBody);
+            //Console.WriteLine("Response " + responseBody);
             return responseBody;
         }
         catch(HttpRequestException e)
