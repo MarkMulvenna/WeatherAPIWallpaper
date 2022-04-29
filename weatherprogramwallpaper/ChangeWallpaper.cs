@@ -116,19 +116,16 @@ public class ChangeWallpaper
     {
         DateTime today5am = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 5, 0, 0);
         
-        int resultOfCompare = DateTime.Compare(DateTime.Now, sunrise );
+        int resultOfCompare = DateTime.Compare(DateTime.Now, sunrise);
 
 
         if (DateTime.Compare(DateTime.Now, today5am) < 0 ) return true;
         
         if (resultOfCompare > 0)
         {
-            return false;
+            return true;
         }
-
-
         return false;
-
     }
     
 
