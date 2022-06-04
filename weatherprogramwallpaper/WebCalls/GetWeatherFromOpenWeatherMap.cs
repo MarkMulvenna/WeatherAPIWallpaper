@@ -7,13 +7,9 @@ namespace weatherprogramwallpaper.WebCalls;
 public class GetWeatherFromOpenWeatherMap
 {
     static readonly HttpClient client = new HttpClient();
-    
-
-    
-
     private static string FormulateUrl()
     {
-        //Remove on build.
+        //Remove on build. 
         //Get directory of app resources json, which has API key and Location
         string workingDirectory = Environment.CurrentDirectory;
         string path = Directory.GetParent(workingDirectory).Parent.Parent.FullName;
@@ -45,7 +41,7 @@ public class GetWeatherFromOpenWeatherMap
             response.EnsureSuccessStatusCode();
             string responseBody = await response.Content.ReadAsStringAsync();
             JsonSerializer serializer = new JsonSerializer();
-            //Console.WriteLine("Response " + responseBody);
+            Console.WriteLine("Response " + responseBody);
             return responseBody;
         }
         catch(HttpRequestException e)

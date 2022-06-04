@@ -14,7 +14,6 @@ public class ChangeWallpaper
 
     public static async Task Main(string[] args)
     {
-       
         await JsonWriterWeather.GetJsonDataAndWrite();
         WeatherObject weatherObject = JsonReader.createWeatherObject();
         makeChangesToSecondMonitor(weatherObject, commands);
@@ -23,12 +22,14 @@ public class ChangeWallpaper
         string commandTextNavWPEngine = "cd D:/SteamLibrary/steamapps/common/wallpaper_engine";
         string commandApplyChanges = "wallpaper64.exe -control applyProperties";
         runCommands(commands);
-        
-
     }
 
     private static async Task makeChangesToSecondMonitor(WeatherObject weatherObject, ArrayList commands)
     {
+        
+        
+        Console.WriteLine(weatherObject.Humidity);
+        Console.WriteLine(weatherObject.Visibility);
        
         string jsonSettings = File.ReadAllText(jsonSettingsPath);
         dynamic jsonObj = JsonConvert.DeserializeObject(jsonSettings);
@@ -70,7 +71,7 @@ public class ChangeWallpaper
             addCommandToArrayList("soundinteractivefirefliesonoff", false);
         }
 
-        if (IsCloudy(weatherObject.Clouds))
+        if (IsCloudy(weatherObject.Visibility))
         {
             jsonObj["general"]["properties"]["foggycloudyaironoff"]["value"] = "true";
             addCommandToArrayList("foggycloudyaironoff", true);
@@ -121,7 +122,7 @@ public class ChangeWallpaper
 
         if (DateTime.Compare(DateTime.Now, today5am) < 0 ) return true;
         
-        if (resultOfCompare > 0)
+        if (resultOfCompare < 0)
         {
             return true;
         }
@@ -139,9 +140,11 @@ public class ChangeWallpaper
     }
     private static bool IsCloudy(double clouds)
     {
-        if (clouds > 75)
+        if (clouds < 9000)
         {
+           
             return true;
+            
         }
         return false;
     }
@@ -186,6 +189,7 @@ public class ChangeWallpaper
         //string dblQuotes = "\"\"";
         formattedCommand += "\"" + command + "\"" + ":" + value.ToString().ToLower();
         commands.Add(formattedCommand);
+        
 
 
     }
